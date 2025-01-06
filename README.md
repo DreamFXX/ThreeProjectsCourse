@@ -11,7 +11,7 @@
   - [ ] Enhancements: Add multiple data entries to the database manually, implement a search bar, and refine the user interface.
 
 2. **Google Docs Clone**
-  - [ ]Introduction and Setup: Get acquainted with the project and set up your development environment.
+  - [ ] Introduction and Setup: Get acquainted with the project and set up your development environment.
   - [ ] Core Development: Create models, set up the database, develop a controller, and handle page creation.
   - [ ] Advanced Features: Incorporate the TinyMCE library, manage document editing, and format the delete page. Learn how to convert documents to PDF for a comprehensive feature set.
 
