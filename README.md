@@ -1,7 +1,8 @@
 # Three Projects Course
-- Personal repository of three course projects from <freecodecamp.org>
 
-## This repository contains 3 ASP.NET Core projects
+## Personal repository of three course projects from freecodecamp.org
+
+### This repository contains 3 ASP.NET Core projects
 
 1. **Food Menu Web App**
   - Setup: Learn to initialize your project and get ready for development. []
