@@ -1,0 +1,25 @@
+﻿@model List<FoodMenu.Models.Dish> 
+
+@{
+    @ViewData["Title"] = "MenuIndex";
+}
+
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        { 
+            // col-6 is that this one column will be 6columns wide
+            <div class="col-6">
+                <div>
+                    <h4>@item.Name</h4>
+                </div>
+                <div>
+                    @item.ImageUrl
+                </div>
+                <div>
+                    @item.Price
+                </div>
+            </div>
+        }
+    </div>
+</div>
