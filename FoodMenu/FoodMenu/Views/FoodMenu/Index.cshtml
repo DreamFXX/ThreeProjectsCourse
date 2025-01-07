@@ -1,23 +1,22 @@
-﻿@model List<FoodMenu.Models.Dish> 
-
+﻿@model List<FoodMenu.Models.Dish>
 @{
-    @ViewData["Title"] = "MenuIndex";
+    ViewData["Title"] = "FoodMenuIndex";
 }
 
 <div class="container">
     <div class="row">
         @foreach (var item in Model)
-        { 
-            // col-6 is that this one column will be 6columns wide
+        {
+            ;
             <div class="col-6">
-                <div>
+                <div class="d-flex justify-content-center">
                     <h4>@item.Name</h4>
                 </div>
-                <div>
-                    @item.ImageUrl
+                <div class="d-flex justify-content-center">
+                    <img src="@item.ImageUrl" style="width: 75%" />
                 </div>
-                <div>
-                    @item.Price
+                <div class="d-flex justify-content-center">
+                    <p>@item.Price.ToString("C2") Czk </p>
                 </div>
             </div>
         }
