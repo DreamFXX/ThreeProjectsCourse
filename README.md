@@ -5,8 +5,8 @@
 ### This repository contains 3 ASP.NET Core projects
 
 1. **Food Menu Web App**
-  - [ ] Setup: Learn to initialize your project and get ready for development. []
-  - [ ] Modeling and Database Integration: Dive into creating models, setting up the context, and connecting your project to a database.
+  - [x] Setup: Learn to initialize your project and get ready for development.
+  - [x] Modeling and Database Integration: Dive into creating models, setting up the context, and connecting your project to a database.
   - [ ] Controller Logic: Develop the controller and its methods to manage data flow between the database and your views.
   - [ ] Enhancements: Add multiple data entries to the database manually, implement a search bar, and refine the user interface.
 
