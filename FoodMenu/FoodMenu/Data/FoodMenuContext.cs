@@ -38,7 +38,7 @@ public class FoodMenuContext : DbContext
 
         // Ingredience (pořadí pokrmů) - Svíčková, Smažený Sýr, Lasaně.
         modelBuilder.Entity<DishIngredient>().HasData(
-            new DishIngredient { DishId = 1, IngredientId = 1 },
+       new DishIngredient { DishId = 1, IngredientId = 1 },
             new DishIngredient { DishId = 1, IngredientId = 2 },
             new DishIngredient { DishId = 1, IngredientId = 6 },
 
