@@ -15,7 +15,10 @@
                     <img src="@item.ImageUrl" style="width: 75%" />
                 </div>
                 <div class="d-flex justify-content-center">
-                    <p>@item.Price.ToString("C2") Czk </p>
+                    @item.Price.ToString("N2") Czk
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id">View Details</a>
                 </div>
             </div>
         }
