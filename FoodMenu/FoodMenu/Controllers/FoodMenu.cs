@@ -1,6 +1,7 @@
 ﻿using FoodMenu.Data;
 using FoodMenu.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.TagHelpers.Cache;
 using Microsoft.EntityFrameworkCore;
 
 namespace FoodMenu.Controllers
@@ -14,10 +15,19 @@ namespace FoodMenu.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
+            var dishes = from d in _context.Dishes
+                         select d;
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                dishes = dishes.Where(d => d.Name.Contains(searchString));
+                return View(await dishes.ToListAsync());
+            }
+
             //await počká na odpověd contextu. async a await se používají pro asynchronní programování (Příprava snídaně).
-            return View(await _context.Dishes.ToListAsync());
+            return View(await dishes.ToListAsync());
         }
 
         public async Task<IActionResult> Details(int? id)
